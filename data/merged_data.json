@@ -1,0 +1,1068 @@
+[
+  {
+    "material_name": "埃克森1002YB物性表",
+    "melt_peak_temperature": 121.0,
+    "melt_peak_temperature_unit": "°C",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 830.0,
+    "elongation_unit": "%",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "埃克森1002YB物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "2420D",
+    "density": 0.923,
+    "density_unit": "g/cm³",
+    "melt_index": 0.25,
+    "melt_index_unit": "g/10min",
+    "melt_peak_temperature": 113.0,
+    "melt_peak_temperature_unit": "unknown",
+    "vicat_softening_temperature": 97.0,
+    "vicat_softening_temperature_unit": "unknown",
+    "tensile_strength_yield": 10.0,
+    "tensile_strength_yield_unit": "MPa",
+    "tensile_strength": 26.0,
+    "tensile_strength_unit": "MPa",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "2420D物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "Enable™ 2703MC",
+    "melt_peak_temperature": 119.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 115.0,
+    "vicat_softening_temperature_unit": "°C",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 750.0,
+    "elongation_unit": "%",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "2703MC物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "Exceed™ 2012 Series",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 96.0,
+    "vicat_softening_temperature_unit": "°C",
+    "tensile_strength": 70.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 610.0,
+    "elongation_unit": "%",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "2012MA物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "5121B",
+    "density": 0.951,
+    "density_unit": "g/cm³",
+    "melt_index": 10.5,
+    "melt_index_unit": "g/10min",
+    "tensile_strength_yield": 26.0,
+    "tensile_strength_yield_unit": "MPa",
+    "melt_peak_temperature": 135.0,
+    "melt_peak_temperature_unit": "unknown",
+    "vicat_softening_temperature": 128.0,
+    "vicat_softening_temperature_unit": "unknown",
+    "tensile_strength": 55.0,
+    "tensile_strength_unit": "MPa",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "5121B____.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "Enable™ 3505MC",
+    "melt_index": 0.5,
+    "melt_index_unit": "g/10min",
+    "melt_peak_temperature": 123.0,
+    "melt_peak_temperature_unit": "°C",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 810.0,
+    "elongation_unit": "%",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "Enable™ 3505MC(1).pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "Enable™ 4009MC Wire & Cable",
+    "melt_peak_temperature": 125.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 120.0,
+    "vicat_softening_temperature_unit": "°C",
+    "tensile_strength_yield": 21.0,
+    "tensile_strength_yield_unit": "MPa",
+    "tensile_strength": 38.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 840.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "4009MC物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "Exceed™ 1018 Series",
+    "melt_peak_temperature": 118.0,
+    "melt_peak_temperature_unit": "°C",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 640.0,
+    "elongation_unit": "%",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "埃克森1018系列物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "2420F",
+    "melt_peak_temperature": 112.0,
+    "melt_peak_temperature_unit": "unknown",
+    "vicat_softening_temperature": 96.0,
+    "vicat_softening_temperature_unit": "unknown",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "2420F物性表.pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "Exceed™ 3518CB (4)",
+    "sources": [
+      {
+        "type": "pdf",
+        "file": "Exceed™ 3518CB (4).pdf"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 1629.NM Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.929,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 510.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 116.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 104.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D025d9124b03f4c8abe14d31b22c0e206.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 317.PM Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.926,
+    "density_unit": "g/cm³",
+    "tensile_strength": 33.1,
+    "tensile_strength_unit": "MPa",
+    "elongation": 590.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 101.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 82.8,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D055dc65e4aa64ec995d807fe0d170f14.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD X7000XL High Density Polyethylene (HDPE), Crosslinkable",
+    "tensile_strength": 19.3,
+    "tensile_strength_unit": "MPa",
+    "elongation": 20.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D086fcfdacec6455391cf4f8ec34881d2.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-10CH Metallocene Polyethylene Resin (Africa & Middle East Grade)",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.7,
+    "tensile_strength_unit": "MPa",
+    "elongation": 740.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 115.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D0f826498c3fb4192a1e4eef22b92bac0.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 312.AS Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.925,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 560.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 105.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D1196ea5404854468a4b8d18df215784b.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 27-05HH Metallocene Polyethylene Resin",
+    "density": 0.927,
+    "density_unit": "g/cm³",
+    "tensile_strength": 58.6,
+    "tensile_strength_unit": "MPa",
+    "elongation": 770.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 119.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D12eefcda57024120817b099eb57bc94d.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HDP 8660.29 High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.941,
+    "density_unit": "g/cm³",
+    "tensile_strength": 19.3,
+    "tensile_strength_unit": "MPa",
+    "elongation": 10.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 129.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D1317af8ed8f0417fa426f4a88da2f48f.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 105.DS Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.923,
+    "density_unit": "g/cm³",
+    "tensile_strength": 23.4,
+    "tensile_strength_unit": "MPa",
+    "elongation": 510.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 112.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 95.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D161549f3ca9e43fd9792f254b0eb893c.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-10HE Metallocene Polyethylene Resin",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 57.2,
+    "tensile_strength_unit": "MPa",
+    "elongation": 730.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D186c37c502954f3fb99bcefd5f6167c3.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 302.LS Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.925,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 520.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 104.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 86.1,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D200e18f172aa4265b9dc699692e2326e.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 27-03HH Metallocene Polyethylene Resin",
+    "density": 0.927,
+    "density_unit": "g/cm³",
+    "tensile_strength": 64.1,
+    "tensile_strength_unit": "MPa",
+    "elongation": 750.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 119.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D23b34600445e41b0806099c9fc48f39b.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 6608.19 High Density Polyethylene (HDPE), Injection Molding Grade",
+    "density": 0.965,
+    "density_unit": "g/cm³",
+    "tensile_strength": 30.3,
+    "tensile_strength_unit": "MPa",
+    "elongation": 440.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 135.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D28c716eae3654211b3ddd25eb2b53f0b.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-10CE Metallocene Polyethylene Resin (Africa & Middle East Grade)",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.7,
+    "tensile_strength_unit": "MPa",
+    "elongation": 740.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 115.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D30b5dfad76a14140bdbd2090dda1edf9.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HDP 8760.29 High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.948,
+    "density_unit": "g/cm³",
+    "tensile_strength": 22.1,
+    "tensile_strength_unit": "MPa",
+    "elongation": 10.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 130.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D3f129bd637344729bf38148e86b54232.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 3529 Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.929,
+    "density_unit": "g/cm³",
+    "tensile_strength": 27.6,
+    "tensile_strength_unit": "MPa",
+    "elongation": 620.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 115.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 102.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D3fa232c4cc3a4826a15110d31a6eb716.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 6001 High Density Polyethylene (HDPE), Film Grade",
+    "density": 0.959,
+    "density_unit": "g/cm³",
+    "tensile_strength": 89.6,
+    "tensile_strength_unit": "MPa",
+    "elongation": 380.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 133.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D3fed3469f37f4211816b53d73520c2f7.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-05CB Metallocene Polyethylene Resin",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 470.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D4c33feadc67241fcbf77ec5f94339457.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-05CH Metallocene Polyethylene Resin (European Grade)",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 68.3,
+    "tensile_strength_unit": "MPa",
+    "elongation": 720.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D4e22d335ee0546a4999074979b992b02.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 2123.DJ Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.923,
+    "density_unit": "g/cm³",
+    "tensile_strength": 23.4,
+    "tensile_strength_unit": "MPa",
+    "elongation": 520.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 110.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 95.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D54cf4587a2664c7bae6fabc1fa7c4cc2.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 6601.29 High Density Polyethylene (HDPE), Injection Molding Grade",
+    "density": 0.948,
+    "density_unit": "g/cm³",
+    "tensile_strength": 23.4,
+    "tensile_strength_unit": "MPa",
+    "elongation": 1000.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 130.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D58271ac8586b4d02a3f0fbf4505a6932.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-10CB Metallocene Polyethylene Resin",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 57.2,
+    "tensile_strength_unit": "MPa",
+    "elongation": 730.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D5c5460970bb04f93b8da304036eb5e30.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil EVA 2006.KJ Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.925,
+    "density_unit": "g/cm³",
+    "tensile_strength": 7.58,
+    "tensile_strength_unit": "MPa",
+    "elongation": 590.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 102.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 81.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D5e573ab21c684ea1b6bd62f71321432f.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 4663HL.UV High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.946,
+    "density_unit": "g/cm³",
+    "melt_index": 190.0,
+    "melt_index_unit": "°C",
+    "tensile_strength": 24.1,
+    "tensile_strength_unit": "MPa",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D6522ab812aeb433d8ca8b538990927f6.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-05HH Metallocene Polyethylene Resin",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 470.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D6618bcd385924c23b148957dfa1ec3dd.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-05HE Metallocene Polyethylene Resin",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 470.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D66eb6f005d2d4316b22cda8db41d5b75.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 5453HL High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.954,
+    "density_unit": "g/cm³",
+    "melt_index": 190.0,
+    "melt_index_unit": "°C",
+    "tensile_strength": 28.3,
+    "tensile_strength_unit": "MPa",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 132.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 126.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D6c33585d40a847ea8d662718919f4913.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 23-05HH Metallocene Polyethylene Resin",
+    "density": 0.923,
+    "density_unit": "g/cm³",
+    "tensile_strength": 61.4,
+    "tensile_strength_unit": "MPa",
+    "elongation": 730.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 116.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D739197b09219434f930ebf27888db5e6.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 1119.PM Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.919,
+    "density_unit": "g/cm³",
+    "tensile_strength": 31.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 610.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 108.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 91.1,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D74773446c003407da5c22e9b20d901b0.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-10CB Metallocene Polyethylene Resin (European Grade)",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.7,
+    "tensile_strength_unit": "MPa",
+    "elongation": 740.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 115.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D879cc6fcb14643ac97318cef537a73cb.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Paxon™ HYA021L High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.954,
+    "density_unit": "g/cm³",
+    "melt_index": 190.0,
+    "melt_index_unit": "°C",
+    "tensile_strength": 28.3,
+    "tensile_strength_unit": "MPa",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "vicat_softening_temperature": 126.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D8888a3b6df794bfab459f4b86e64832e.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil EVA 2006.CJ Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.925,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 590.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 102.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 81.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D88f17437474048eb9d95b6ba24c534bf.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-10HA Metallocene Polyethylene Resin",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 57.2,
+    "tensile_strength_unit": "MPa",
+    "elongation": 730.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D8b86919dbb434b93b072f8f14659a363.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 1119.LS Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.919,
+    "density_unit": "g/cm³",
+    "tensile_strength": 31.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 610.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 108.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 91.1,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3D943dd6bc97ff48b7843e2f27ca5685e5.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 27-03HH Metallocene Polyethylene Resin (European Grade)",
+    "density": 0.927,
+    "density_unit": "g/cm³",
+    "tensile_strength": 64.1,
+    "tensile_strength_unit": "MPa",
+    "elongation": 750.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 119.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Da06892e1fa7740a09c2080e7cadd2835.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 5530HL High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.956,
+    "density_unit": "g/cm³",
+    "melt_index": 190.0,
+    "melt_index_unit": "°C",
+    "tensile_strength": 27.6,
+    "tensile_strength_unit": "MPa",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 133.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 129.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Da477cf1bfba84958aa288b8d0a50d6b2.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 6608.65 High Density Polyethylene (HDPE), Injection Molding Grade",
+    "density": 0.965,
+    "density_unit": "g/cm³",
+    "tensile_strength": 30.3,
+    "tensile_strength_unit": "MPa",
+    "elongation": 440.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "melt_peak_temperature": 135.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Da7d5c0bf9d0249a6ad41b23b6f1b4503.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 117.03 Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.929,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 510.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 116.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 104.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dade29d3c60ed43cfbd135aeeabb2172e.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 35-05HH Metallocene Polyethylene Resin",
+    "density": 0.935,
+    "density_unit": "g/cm³",
+    "tensile_strength": 57.9,
+    "tensile_strength_unit": "MPa",
+    "elongation": 810.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 123.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Db03d6797fd1c47d7af6eef2d19bd4193.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 23-05NA Metallocene Polyethylene Resin",
+    "density": 0.923,
+    "density_unit": "g/cm³",
+    "tensile_strength": 61.4,
+    "tensile_strength_unit": "MPa",
+    "elongation": 730.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 116.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Db6238463a1004e60b89241af60a5b1be.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 302.AJ Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.925,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 520.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 104.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 86.1,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dbe84323821604df797a9cc3ce7406e5f.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 2329.DS Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.929,
+    "density_unit": "g/cm³",
+    "tensile_strength": 23.4,
+    "tensile_strength_unit": "MPa",
+    "elongation": 470.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 117.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dc153dfc5cdcc44ddb93f162d88f475f6.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD 4802 High Density Polyethylene (HDPE), Blow Molding Grade",
+    "density": 0.948,
+    "density_unit": "g/cm³",
+    "tensile_strength": 26.2,
+    "tensile_strength_unit": "MPa",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "vicat_softening_temperature": 122.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dca0f0795b8754e6cb4e1bc37d763cb42.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Paxon™ BU46-060 High Density Polyethylene (HDPE), Copolymer Film Grade",
+    "density": 0.945,
+    "density_unit": "g/cm³",
+    "melt_index": 190.0,
+    "melt_index_unit": "°C",
+    "tensile_strength": 22.8,
+    "tensile_strength_unit": "MPa",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "vicat_softening_temperature": 124.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dcf8bb3316dd7412a815093393bc312a8.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil LD 1629.JJ Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.929,
+    "density_unit": "g/cm³",
+    "tensile_strength": 24.8,
+    "tensile_strength_unit": "MPa",
+    "elongation": 510.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 116.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 104.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dd07c7c962b9a473982a7491b8b009a61.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil EVA 2006.NM Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.926,
+    "density_unit": "g/cm³",
+    "tensile_strength": 29.6,
+    "tensile_strength_unit": "MPa",
+    "elongation": 620.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 101.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 81.1,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dd6c1271fb3104c19bd47e5b595b88ee8.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil EVA 2006.AS Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.925,
+    "density_unit": "g/cm³",
+    "tensile_strength": 7.58,
+    "tensile_strength_unit": "MPa",
+    "elongation": 590.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 102.0,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 81.0,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dd6f99856b9e14f0a8fdbf2528af7b08e.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 20-05HH Metallocene Polyethylene Resin (European Grade)",
+    "density": 0.92,
+    "density_unit": "g/cm³",
+    "tensile_strength": 60.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 710.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 114.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Ddcd65c991e664159aa247f1589434b6c.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil HD X7000 High Density Polyethylene (HDPE), Crosslinkable",
+    "tensile_strength": 18.6,
+    "tensile_strength_unit": "MPa",
+    "elongation": 10.0,
+    "elongation_unit": "%",
+    "flexural_modulus": 1.0,
+    "flexural_modulus_unit": "%",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Dec55f880ead64b009355eafd6fcb6932.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil Enable™ 27-03CH Metallocene Polyethylene Resin (European Grade)",
+    "density": 0.927,
+    "density_unit": "g/cm³",
+    "tensile_strength": 66.2,
+    "tensile_strength_unit": "MPa",
+    "elongation": 760.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 119.0,
+    "melt_peak_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Def2811c9881f4bb5b63c5a7939291b4c.html"
+      }
+    ]
+  },
+  {
+    "material_name": "ExxonMobil EVA 2009.PM Low Density Polyethylene (LDPE), Film Grade",
+    "density": 0.93,
+    "density_unit": "g/cm³",
+    "tensile_strength": 31.0,
+    "tensile_strength_unit": "MPa",
+    "elongation": 660.0,
+    "elongation_unit": "%",
+    "melt_peak_temperature": 97.8,
+    "melt_peak_temperature_unit": "°C",
+    "vicat_softening_temperature": 77.2,
+    "vicat_softening_temperature_unit": "°C",
+    "sources": [
+      {
+        "type": "html",
+        "file": "https%3A%2F%2Fwww.matweb.com%2Fsearch%2FDataSheet.aspx%3FMatGUID%3Df53e06dbf7c2426fba596452d1457150.html"
+      }
+    ]
+  }
+]
