@@ -1,0 +1,5 @@
+{"source_file": "2420F物性表.pdf", "field": "density", "value": 1183.0, "unit": "g/cm³", "reason": "standard_number"}
+{"source_file": "2420F物性表.pdf", "field": "melt_index", "value": 1133.0, "unit": "g/10min", "reason": "standard_number"}
+{"source_file": "2420F物性表.pdf", "field": "tensile_strength_yield", "value": 527.0, "unit": "MPa", "reason": "standard_number"}
+{"source_file": "2420F物性表.pdf", "field": "tensile_strength", "value": 527.0, "unit": "MPa", "reason": "standard_number"}
+{"source_file": "2420F物性表.pdf", "field": "tensile_strength", "value": 527.0, "unit": "MPa", "reason": "standard_number"}

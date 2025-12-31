@@ -53,6 +53,7 @@ def templates() -> List[str]:
 
 def build_output(record: Dict) -> str:
     parts = []
+    # 参数描述：保证输出包含关键物性
     if record.get("density") is not None:
         parts.append(f"密度为 {record['density']} {record.get('density_unit', '')}。")
     if record.get("melt_index") is not None:
@@ -77,21 +78,34 @@ def build_output(record: Dict) -> str:
         )
     if not parts:
         parts.append("暂无完整物性数据，需要补充测试。")
+    # 伪专家推理：基于多属性组合生成解释
     reasoning = []
-    if record.get("density") is not None:
-        if record["density"] < 0.92:
+    density = record.get("density")
+    melt_index = record.get("melt_index")
+    tensile = record.get("tensile_strength")
+    elongation = record.get("elongation")
+    if density is not None:
+        if density < 0.92:
             reasoning.append("较低密度通常意味着更好的柔韧性与韧性")
-        elif record["density"] > 0.94:
+        elif density > 0.94:
             reasoning.append("较高密度常对应更高刚性与耐热性")
-    if record.get("melt_index") is not None:
-        if record["melt_index"] <= 1.0:
+    if melt_index is not None:
+        if melt_index <= 1.0:
             reasoning.append("低熔指通常代表更高分子量和更好的力学性能")
-        elif record["melt_index"] >= 10:
+        elif melt_index >= 10:
             reasoning.append("较高熔指通常意味着更好的流动性与加工性")
-    if record.get("tensile_strength") is not None and record["tensile_strength"] >= 20:
+    if tensile is not None and tensile >= 20:
         reasoning.append("拉伸强度较高，适合承载或耐撕裂应用")
-    if record.get("elongation") is not None and record["elongation"] >= 400:
+    if elongation is not None and elongation >= 400:
         reasoning.append("断裂伸长率高，说明材料延展性好")
+    if density is not None and melt_index is not None:
+        if density < 0.92 and melt_index >= 5:
+            reasoning.append("密度低且熔指偏高，兼顾柔韧性与加工流动性")
+        if density > 0.94 and melt_index <= 1.0:
+            reasoning.append("密度高且熔指较低，可能更偏向刚性与耐热场景")
+    if tensile is not None and elongation is not None:
+        if tensile >= 20 and elongation >= 400:
+            reasoning.append("强度与延展性同时较高，适合要求抗撕裂的薄膜应用")
     reasoning_text = ""
     if reasoning:
         reasoning_text = "专家推理：综合物性来看，" + "；".join(reasoning) + "。"

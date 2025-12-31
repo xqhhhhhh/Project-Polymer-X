@@ -32,6 +32,7 @@ def extract_lines_from_html(html: str) -> List[str]:
             cells = [cell.get_text(" ", strip=True) for cell in row.find_all("td")]
             if len(cells) < 2:
                 continue
+            # MatWeb 详情页常见：Property | Metric | English | Comments
             if len(cells) >= 3:
                 prop = cells[0]
                 metric = cells[1]
@@ -115,6 +116,7 @@ def process_html(path: Path) -> Dict:
         "properties": {},
     }
 
+    # 复用 PDF 的文本行解析逻辑
     for line in lines:
         clean_text = clean_line_noise(line)
         candidates = extract_candidates(clean_text)

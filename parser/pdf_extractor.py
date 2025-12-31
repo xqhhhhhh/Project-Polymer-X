@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Tuple, Set
 
 import pdfplumber
 
-# --- 1. 配置区域: 映射表与白名单 ---
+# --- 1. 配置区域: 字段映射、单位归一与过滤规则 ---
 
 # 属性映射表 (中文/英文 -> 标准字段)
 PROPERTY_MAP = {
@@ -84,7 +84,7 @@ STANDARD_NUMBERS = {1183, 1133, 527, 178, 306, 868, 790, 792, 1238, 1505, 1003, 
 # --- 2. 核心工具函数 ---
 
 def clean_line_noise(line: str) -> str:
-    """清除行内的噪音词"""
+    """清除行内的噪音词，避免影响属性名识别"""
     cleaned = line
     for term in NOISE_TERMS:
         cleaned = re.sub(term, " ", cleaned, flags=re.IGNORECASE)
@@ -125,39 +125,32 @@ def convert_value(value: float, unit: str) -> Tuple[float, str]:
         
     return value, unit
 
-def validate_value(key: str, value: float) -> bool:
-    """
-    【核心逻辑】数据卫士：根据物理常识和标准编号黑名单过滤离谱数值
-    """
-    # 1. 黑名单拦截 (拦截 ISO 1183, 1133 等)
+def validate_value_with_reason(key: str, value: float) -> Tuple[bool, str]:
+    """返回 (是否通过, 失败原因)，用于脏数据日志"""
     if int(value) in STANDARD_NUMBERS and value.is_integer():
-        return False
-        
-    # 2. 物理范围拦截
+        return False, "standard_number"
+
     if key == "density":
-        # 聚乙烯密度通常在 0.85 ~ 1.5 (考虑到填充物)
         if value > 2.0 or value < 0.8:
-            return False
-            
+            return False, "density_out_of_range"
     elif key == "melt_index":
-        # 熔指通常在 0.1 ~ 200
-        if value > 300: 
-            return False
-            
+        if value > 300:
+            return False, "melt_index_out_of_range"
     elif key == "elongation":
-        # 伸长率通常是百分比，极少超过 2000%
         if value > 2000:
-            return False
-            
+            return False, "elongation_out_of_range"
     elif "temperature" in key:
-        # 聚乙烯相关温度通常在 50 ~ 300 度
         if value > 500 or value < 0:
-            return False
-            
-    return True
+            return False, "temperature_out_of_range"
+
+    return True, ""
+
+
+def validate_value(key: str, value: float) -> bool:
+    return validate_value_with_reason(key, value)[0]
 
 def extract_candidates(text: str) -> List[Tuple[float, str]]:
-    """提取 (数值, 单位) 对"""
+    """提取 (数值, 单位) 对，兼容 Value-Unit / Unit-Value 两种排列"""
     candidates = []
     text = text.replace("%", " % ") # 预处理
     tokens = text.split()
@@ -212,9 +205,81 @@ def parse_shell_special(line: str) -> Optional[Tuple[float, str]]:
     except:
         return None
 
+
+def normalize_cell(cell: str) -> str:
+    if cell is None:
+        return ""
+    return re.sub(r"\s+", " ", str(cell)).strip()
+
+
+def normalize_metric_cell(metric: str, comments: str) -> str:
+    metric = metric.strip()
+    if not metric:
+        return ""
+    if comments:
+        avg_match = re.search(r"Average value:\s*([\d\.]+)\s*([A-Za-z°/%μµ³²·/\-]+)", comments)
+        if avg_match:
+            return f"{avg_match.group(1)} {avg_match.group(2)}"
+    range_match = re.search(r"([\d\.]+)\s*[-–~to]+\s*([\d\.]+)\s*([A-Za-z°/%μµ³²·/\-]+)", metric)
+    if range_match:
+        lo = float(range_match.group(1))
+        hi = float(range_match.group(2))
+        unit = range_match.group(3)
+        avg = round((lo + hi) / 2, 4)
+        return f"{avg} {unit}"
+    return metric
+
+
+def extract_property_lines_from_table(rows: List[List[str]]) -> List[str]:
+    """从表格结构还原为“属性 + 值 + 单位”的行文本"""
+    lines: List[str] = []
+    metric_idx = None
+    unit_idx = None
+    value_idx = None
+
+    for row in rows:
+        if not any(row):
+            continue
+        lower = [c.lower() for c in row]
+        if any("metric" in c for c in lower) and any("english" in c for c in lower):
+            metric_idx = next(i for i, c in enumerate(lower) if "metric" in c)
+            continue
+        if any("unit" in c or "单位" in c for c in row) and any("value" in c or "数值" in c for c in row):
+            unit_idx = next(i for i, c in enumerate(row) if "unit" in c.lower() or "单位" in c)
+            value_idx = next(i for i, c in enumerate(row) if "value" in c.lower() or "数值" in c)
+            continue
+        if any("properties" in c for c in lower) or any("性能" in c for c in row):
+            continue
+
+        prop = row[0]
+        if not prop or len(prop) > 120:
+            continue
+
+        if metric_idx is not None and len(row) > metric_idx:
+            metric = row[metric_idx]
+            comments = row[metric_idx + 2] if len(row) > metric_idx + 2 else ""
+            metric_value = normalize_metric_cell(metric, comments)
+            if metric_value:
+                lines.append(f"{prop} {metric_value}")
+            continue
+
+        if unit_idx is not None and value_idx is not None:
+            if len(row) > max(unit_idx, value_idx):
+                unit = row[unit_idx]
+                value = row[value_idx]
+                lines.append(f"{prop} {value} {unit}")
+            continue
+
+        if len(row) >= 3:
+            lines.append(f"{prop} {row[1]} {row[2]}")
+        elif len(row) >= 2:
+            lines.append(f"{prop} {row[1]}")
+
+    return lines
+
 # --- 3. 主流程 ---
 
-def process_pdf(pdf_path: Path) -> Dict:
+def process_pdf(pdf_path: Path, dirty_log: List[Dict]) -> Dict:
     data = {
         "material_name": pdf_path.stem,
         "source_file": pdf_path.name,
@@ -224,16 +289,22 @@ def process_pdf(pdf_path: Path) -> Dict:
     lines = []
     full_text_cache = []
     
+    table_lines: List[str] = []
+
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
             text = page.extract_text()
             if text:
                 full_text_cache.append(text)
                 lines.extend([line.strip() for line in text.split('\n') if line.strip()])
+            for table in page.extract_tables() or []:
+                rows = [[normalize_cell(cell) for cell in row] for row in table if row]
+                if rows:
+                    table_lines.extend(extract_property_lines_from_table(rows))
 
     full_text = " ".join(full_text_cache)
     
-    # 厂商判断
+    # 厂商判断：用于双列或中英混排的兜底策略
     is_shell = "中海壳牌" in full_text or "CNOOC" in full_text or "Shell" in full_text
     is_exxon = "ExxonMobil" in full_text
     
@@ -246,10 +317,9 @@ def process_pdf(pdf_path: Path) -> Dict:
             data["material_name"] = line.strip()
             break
 
-    # 逐行解析
-    for line in lines:
+    def handle_line(line: str) -> None:
         if any(bad in line.lower() for bad in IGNORE_KEYWORDS):
-            continue
+            return
             
         clean_text = clean_line_noise(line)
         candidates = extract_candidates(clean_text)
@@ -259,7 +329,8 @@ def process_pdf(pdf_path: Path) -> Dict:
             res = parse_shell_special(clean_text)
             if res: candidates.append(res)
         
-        if not candidates: continue
+        if not candidates:
+            return
         
         # 映射属性名
         # 截取第一个数值前的文本作为 Key 候选
@@ -282,9 +353,19 @@ def process_pdf(pdf_path: Path) -> Dict:
             # 转换与校验
             final_val, final_unit = convert_value(best_val, best_unit)
             
-            # 【关键步骤】数据校验：如果不合法，直接跳过
-            if not validate_value(mapped_key, final_val):
-                continue
+            # 【关键步骤】数据校验：如果不合法，记录脏数据
+            ok, reason = validate_value_with_reason(mapped_key, final_val)
+            if not ok:
+                dirty_log.append(
+                    {
+                        "source_file": pdf_path.name,
+                        "field": mapped_key,
+                        "value": final_val,
+                        "unit": final_unit,
+                        "reason": reason,
+                    }
+                )
+                return
             
             # 存储 (Tensile 取最大值逻辑)
             if mapped_key == "tensile_strength":
@@ -293,6 +374,13 @@ def process_pdf(pdf_path: Path) -> Dict:
                     data["properties"][mapped_key] = {"value": final_val, "unit": final_unit}
             else:
                 data["properties"][mapped_key] = {"value": final_val, "unit": final_unit}
+        return
+
+    # 先用表格结构化结果，再回退到行文本（避免跨行错位）
+    for line in table_lines:
+        handle_line(line)
+    for line in lines:
+        handle_line(line)
 
     # 拍平输出
     flat_data = {
@@ -311,6 +399,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Extract material properties from PDFs")
     parser.add_argument("--input-dir", default="data_src")
     parser.add_argument("--out", default="data/pdf_data.json")
+    parser.add_argument("--dirty-log", default="data/dirty_data.log")
     return parser.parse_args()
 
 
@@ -318,6 +407,7 @@ def main():
     args = parse_args()
     input_dir = Path(args.input_dir)
     output_file = Path(args.out)
+    dirty_log_path = Path(args.dirty_log)
     pdf_files = list(input_dir.glob("*.pdf"))
     if not pdf_files:
         print(f"No PDF files found in {input_dir.absolute()}")
@@ -325,15 +415,21 @@ def main():
 
     print(f"Processing {len(pdf_files)} files from {input_dir}...")
     results = []
+    dirty_log: List[Dict] = []
     for f in pdf_files:
         try:
-            res = process_pdf(f)
+            res = process_pdf(f, dirty_log)
             results.append(res)
         except Exception as e:
             print(f"Error in {f.name}: {e}")
 
     output_file.parent.mkdir(parents=True, exist_ok=True)
     output_file.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
+    dirty_log_path.parent.mkdir(parents=True, exist_ok=True)
+    if dirty_log:
+        with dirty_log_path.open("w", encoding="utf-8") as f:
+            for item in dirty_log:
+                f.write(json.dumps(item, ensure_ascii=False) + "\n")
     print(f"Done! Saved to {output_file}")
 
 if __name__ == "__main__":
